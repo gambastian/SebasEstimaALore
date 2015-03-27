@@ -17,10 +17,6 @@ public privileged aspect AddCars {
 	pointcut addCars():
 		call(* CalculadorImpuestos.cargarVehiculos(..));
 	
-	/**
-	 * Para el pointcut addCars() se situa como objetivo un objeto ci de tipo CalculadorImpuestos
-	 * @param ci
-	 */
 	after(CalculadorImpuestos ci) : target(ci) && addCars(){
 		try {
 			ci.cargarVehiculos( "data/vehiculos2.txt" );
