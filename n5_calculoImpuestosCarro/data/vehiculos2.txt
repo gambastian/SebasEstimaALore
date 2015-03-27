@@ -1,0 +1,7 @@
+#---------------------------------------------------------
+# Vehiculos almacenados para el calculo de impuestos
+#
+# Formato: Marca,Linea,Modelo,Precio
+#---------------------------------------------------------
+
+Chevrolet,Spark,2014,26000000
